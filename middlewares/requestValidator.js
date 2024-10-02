@@ -1,5 +1,8 @@
-import { validationResult } from 'express-validator'
+// IMPORT import { validationResult } from 'express-validator'
+import pkg from 'express-validator'
 import response from './../response.js'
+
+const { validationResult } = pkg
 
 const validate = (req, res, next) => {
     const errors = validationResult(req)
